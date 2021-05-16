@@ -31,18 +31,14 @@
 
     <!-- Who We Are -->
     <section>
-      <WhoWeAre />
-    </section>
-
-    <!-- Join NewsLetter -->
-    <section>
-      <div class="container-fluid newsletter position-relative text-center p-5">
-        <h3 class="py-2 text-white">Subscribe to our Newsletter</h3>
-        <!-- <span class="icon"><i class=" fas fa-envelope"></i></span> -->
-        <input type="email" id="newsletter" placeholder="Email.." />
-        <button><i class="fas fa-envelope"></i> Subscribe</button>
+      <div class="container">
+        <div class="title text-center">Projects</div>
+        <div class="text-center my-5 text-danger fw-bold fs-3 ">
+          No project in this directory yet
+        </div>
       </div>
     </section>
+
 
     <section>
       <Footer />
@@ -53,9 +49,8 @@
 <script>
 import Footer from "../components/Footer.vue";
 import Header from "../components/Header.vue";
-import WhoWeAre from "../components/WhoWeAre.vue";
 export default {
-  components: { Footer, Header, WhoWeAre },
+  components: { Footer, Header },
 };
 </script>
 
@@ -96,7 +91,7 @@ body {
     margin-top: 70px;
     button {
       background: none;
-      border: 1px solid var(--Sec);
+      border: 1px solid lightgreen;
       border-radius: 10px;
       font-size: 20px;
       padding: 10px 15px;
@@ -104,51 +99,12 @@ body {
       color: white;
       font-weight: 500;
       &:hover {
-        background: var(--Sec);
+        background: lightgreen;
         transition: ease-in-out 0.8s;
         color: #000;
       }
     }
   }
 }
-.newsletter {
-  background: url("../assets/images/bubble-animated-background.svg");
-  .icon {
-    position: absolute;
-    top: 7.1rem;
-    left: 6rem;
-    transform: translate(-50%, -50%);
-    color: #000;
-  }
-  input {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    // padding-left: 30px;
-    width: 70%;
-    outline: none;
-    border: none;
-    border-radius: 10px 0 0 10px;
-  }
-  button {
-    background: var(--Sec);
-    padding: 10px;
-    color: #fff;
-    outline: none;
-    border: none;
-    border-radius: 0 10px 10px 0;
-  }
-}
 
-// Mobile Navigation Menu
-@media screen and (max-width: 768px) {
-  .overlay {
-    h1 {
-      font-size: 35px !important;
-    }
-  }
-  input {
-    width: 50% !important;
-    transition: width 0.5s;
-  }
-}
 </style>

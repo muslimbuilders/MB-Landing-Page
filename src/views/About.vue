@@ -14,14 +14,7 @@
               <h1 class="text-white">
                 Feel Free to Learn and know more about Us
               </h1>
-              <div class="my-5 subhero d-flex justify-content-evenly">
-                <div>
-                  <button>Get Stared</button>
-                </div>
-                <div>
-                  <button>Explore More</button>
-                </div>
-              </div>
+            
             </div>
           </div>
         </div>
@@ -34,7 +27,7 @@
       <div class=" fw-bold fs-3 title">
         Vision
       </div>
-     <div class="content mb-3">
+     <div class="content my-5">
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
         aliquid harum ipsum voluptatum eius, similique expedita, quidem eveniet
@@ -49,7 +42,7 @@
       <div class=" fw-bold fs-3 title">
         Mission
       </div>
-     <div class="content mb-3">
+     <div class="content my-5">
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
         aliquid harum ipsum voluptatum eius, similique expedita, quidem eveniet
@@ -64,7 +57,7 @@
       <div class=" fw-bold fs-3 title">
         Core-Values
       </div>
-     <div class="content mb-3">
+     <div class="content my-5">
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
         aliquid harum ipsum voluptatum eius, similique expedita, quidem eveniet
@@ -98,7 +91,7 @@ body {
 }
 .hero-section {
   position: relative;
-  background: url("../assets/images/bg1.jpg");
+  background: url("../assets/images/bg2.jpg");
   height: 100vh;
 
   background-position: center;

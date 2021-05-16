@@ -12,7 +12,7 @@
           <div class="overlay ">
             <div class="container">
               <h1 class="text-white">
-                Feel free to Meet The MuslimBuilders Team
+                Feel free to Meet The MuslimBuilder's Team
               </h1>
             </div>
           </div>
@@ -26,9 +26,9 @@
       <div class="title mb-5 fw-bold fs-3 text-center">
         The Team
       </div>
-      <div class="container">
+      <div class="container profile">
         <!-- Solintin Profile -->
-        <div class="row border-top border-bottom py-3">
+        <div class="row  border-bottom py-5">
           <div class="col-md-6">
             <div class="d-flex align-items-center justify-content-around">
               <div class="d-flex flex-column justify-content-evenly">
@@ -45,23 +45,24 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 ml-3 my-auto">
-            <p class="name">Alley Soliu</p>
-            <p class="role fw-bold fs-5 ">Frontend Web Developer</p>
-            <p class="about">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi harum exercitationem dolor impedit autem laudantium
-              explicabo labore ut sunt alias aut obcaecati, beatae perferendis!
-              Adipisci laboriosam blanditiis iure quidem eveniet.
-            </p>
+          <div class="col-md-6 ml-3 info my-auto">
+            <div>
+              <p class="name">Alley Soliu</p>
+              <p class="role fw-bold fs-5 ">Frontend Web Developer</p>
+              <p class="about">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi harum exercitationem dolor impedit autem laudantium
+                explicabo labore ut sunt alias aut obcaecati, beatae
+                perferendis! Adipisci laboriosam blanditiis iure quidem eveniet.
+              </p>
+            </div>
           </div>
         </div>
         <!--E Solintin Profile -->
 
-
-    <!-- Yusadolat Profile -->
-        <div class="row border-top border-bottom py-3">
-          <div class="col-md-6 ml-3 info my-auto">
+        <!-- Yusadolat Profile -->
+        <div class="row border-top border-bottom py-5">
+          <div class="col-md-6 ml-3 reverse info my-auto">
             <p class="name">Yusuf Adeyemo</p>
             <p class="role fw-bold fs-5 ">Backend Web Developer</p>
             <p class="about">
@@ -88,11 +89,10 @@
             </div>
           </div>
         </div>
-    <!-- E Yusadolat Profile -->
+        <!-- E Yusadolat Profile -->
 
-
-      <!-- Mustaphic Profile -->
-        <div class="row border-top border-bottom py-3">
+        <!-- Mustaphic Profile -->
+        <div class="row border-top border-bottom py-5">
           <div class="col-md-6">
             <div class="d-flex align-items-center justify-content-around">
               <div class="d-flex flex-column justify-content-evenly">
@@ -109,7 +109,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 ml-3 my-auto">
+          <div class="col-md-6 ml-3 info my-auto">
             <p class="name">AbdulRazaq Mustapha</p>
             <p class="role fw-bold fs-5 ">Frontend Web Developer</p>
             <p class="about">
@@ -122,9 +122,9 @@
         </div>
         <!--E Mustaphic Profile -->
 
-    <!-- AbdQaadr Profile -->
-        <div class="row border-top border-bottom py-3">
-          <div class="col-md-6 ml-3 info my-auto">
+        <!-- AbdQaadr Profile -->
+        <div class="row border-top  py-5">
+          <div class="col-md-6 ml-3 reverse info my-auto">
             <p class="name">Abdullateef AbdQaadr</p>
             <p class="role fw-bold fs-5 ">Frontend Web Developer</p>
             <p class="about">
@@ -151,10 +151,7 @@
             </div>
           </div>
         </div>
-    <!-- E AbdQaadr Profile -->
-
-
-
+        <!-- E AbdQaadr Profile -->
       </div>
     </section>
 
@@ -232,9 +229,23 @@ body {
     border-radius: 50%;
   }
 }
+
 .name {
   color: var(--Pri);
   font-size: 30px;
   font-weight: 500;
+}
+
+// Mobile Navigation Menu
+@media screen and (max-width: 768px) {
+  .team-img {
+    img {
+      height: 280px !important;
+    }
+  }
+
+  .reverse {
+    order: 2;
+  }
 }
 </style>
