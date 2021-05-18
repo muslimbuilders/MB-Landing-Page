@@ -88,9 +88,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-body {
-  font-family: "Ubuntu", sans-serif;
-}
+
 .top {
   position: fixed;
   top: 0;
@@ -100,10 +98,12 @@ body {
   &.header-bg{
     background: rgba($color: #198754, $alpha: 0.7);
     transition: all .6s ease-in-out;
+    
   }
 }
 .header-wrapper {
-  padding: 0 15px 0 15px;
+  width : 100vw;
+  padding: 3px 35px 3px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -178,7 +178,7 @@ body {
   .links {
     height: 100vh;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
     right : 0;

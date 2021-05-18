@@ -30,7 +30,7 @@
         <!-- Solintin Profile -->
         <div class="row  border-bottom py-5">
           <div class="col-md-6">
-            <div class="d-flex align-items-center justify-content-around">
+            <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex flex-column justify-content-evenly">
                 <span><i class="fa-2x fab fa-github"></i> </span>
 
@@ -73,7 +73,7 @@
             </p>
           </div>
           <div class="col-md-6">
-            <div class="d-flex align-items-center justify-content-around">
+            <div class="d-flex align-items-center justify-content-between">
               <div class="team-img">
                 <img src="../assets/images/Team-member.png" alt="" />
               </div>
@@ -94,7 +94,7 @@
         <!-- Mustaphic Profile -->
         <div class="row border-top border-bottom py-5">
           <div class="col-md-6">
-            <div class="d-flex align-items-center justify-content-around">
+            <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex flex-column justify-content-evenly">
                 <span><i class="fa-2x fab fa-github"></i> </span>
 
@@ -135,7 +135,7 @@
             </p>
           </div>
           <div class="col-md-6">
-            <div class="d-flex align-items-center justify-content-around">
+            <div class="d-flex align-items-center justify-content-between">
               <div class="team-img">
                 <img src="../assets/images/Team-member.png" alt="" />
               </div>
