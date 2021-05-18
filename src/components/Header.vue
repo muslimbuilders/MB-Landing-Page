@@ -1,6 +1,6 @@
 <template>
   <div class="top container-fluid  text-dark">
-    <div class="header-wrapper">
+    <div class="header-wrapper container">
       <div class="logo">
         <a href="#">
           <div class="fw-bold text-uppercase">
@@ -102,8 +102,8 @@ export default {
   }
 }
 .header-wrapper {
-  width : 100vw;
-  padding: 3px 35px 3px 15px;
+  width : 100%;
+  padding: 3px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
