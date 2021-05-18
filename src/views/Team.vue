@@ -167,6 +167,26 @@ import Header from "../components/Header.vue";
 
 export default {
   components: { Footer, Header },
+  metaInfo() {
+    return {
+      title: "Team | MuslimBuilders",
+      meta: [
+        {
+          name: "description",
+          content:
+            "We are a community of Muslim Changemakers who upskill & pioneer the world of tech",
+        },
+        {
+          property: "og:title",
+          content:  "Team | MuslimBuilders",
+        },
+        { property: "og:site_name", content: "MuslimBuilders" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" },
+      ],
+    };
+  },
+
 };
 </script>
 
@@ -231,12 +251,21 @@ body {
 }
 
 .name {
-  color: var(--Pri);
+  color: var(--name);
   font-size: 30px;
   font-weight: 500;
+  margin-bottom: 0 !important;
 }
 
 // Mobile Navigation Menu
+@media screen and (max-width: 1000px) {
+  .team-img {
+    img {
+      height: 280px !important;
+      transition : height .7s;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .team-img {
     img {

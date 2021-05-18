@@ -51,6 +51,26 @@ import Footer from "../components/Footer.vue";
 import Header from "../components/Header.vue";
 export default {
   components: { Footer, Header },
+   metaInfo() {
+    return {
+      title: "Project | MuslimBuilders",
+      meta: [
+        {
+          name: "description",
+          content:
+            "We are a community of Muslim Changemakers who upskill & pioneer the world of tech",
+        },
+        {
+          property: "og:title",
+          content:  "Project | MuslimBuilders",
+        },
+        { property: "og:site_name", content: "MuslimBuilders" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" },
+      ],
+    };
+  },
+
 };
 </script>
 

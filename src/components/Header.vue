@@ -15,40 +15,48 @@
           </div>
         </a>
       </div>
-      <div class="links">
+      <div class="links" :class="{ 'open': isOpen }">
         <ul>
-          <li data-id="home"><router-link to="/home">Home</router-link></li>
+          <li data-id="home"><router-link to="/">Home</router-link></li>
           <li data-id="about"><router-link to="/about">About</router-link></li>
           <li data-id="team"><router-link to="/team">Team</router-link></li>
           <li data-id="projects"><router-link to="/projects">Projects</router-link></li>
         </ul>
       </div>
-      <div class="menu-bar">
+      <div class="menu-bar" @click="navOpener" >
         <div class="menu-wrapper">
-          <i class="text-white  fas fa-bars"></i>
+          <i v-if="!isOpen" class="text-white  fas fa-bars"></i>
+          <i v-else class="text-white  fas fa-times"></i>
         </div>
       </div>
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 export default {
   data() {
     return {
       pagechecker: "",
+      isOpen : false,
     };
+  },
+
+  methods: {
+    navOpener(){
+        this.isOpen = !this.isOpen;
+    }
   },
  
   mounted() {
     const setThis = this;
-    const menuBar = document.querySelector(".menu-bar ");
-    const menuIcon = document.querySelector(".menu-bar i");
-    const menuLink = document.querySelector(".links");
-    menuBar.addEventListener("click", () => {
-      menuLink.classList.toggle("open");
-      menuIcon.classList.toggle("open");
-    });
+    // const menuBar = document.querySelector(".menu-bar ");
+    // const menuIcon = document.querySelector(".menu-bar i");
+    // const menuLink = document.querySelector(".links");
+    // menuBar.addEventListener("click", () => {
+    //   menuLink.classList.toggle("open");
+    //   menuIcon.classList.toggle("open");
+    // });
 
     const navHeader = document.querySelector(".top");
  
@@ -75,7 +83,7 @@ export default {
     }, 500);
   },
 
-  methods: {},
+ 
 };
 </script>
 
@@ -113,7 +121,7 @@ body {
       padding: 5px 15px !important;
       margin: 0 2px;
       &:hover {
-        background: var(--Pri);
+        background: var(--Ter);
         border-radius: 3px;
       }
     }
@@ -173,6 +181,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
+    right : 0;
     background: rgba($color: #198754, $alpha: 0.9);
     clip-path: circle(10px at 90% -12%);
     -webkit-clip-path: circle(10px at 90% -12%);
@@ -196,9 +205,6 @@ body {
       }
     }
   }
-  .menu-bar i.open::before {
-    content: "\f00d";
-    transition: all 1s ease-in;
-  }
+
 }
 </style>

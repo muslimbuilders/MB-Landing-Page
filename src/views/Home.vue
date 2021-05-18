@@ -56,6 +56,26 @@ import Header from "../components/Header.vue";
 import WhoWeAre from "../components/WhoWeAre.vue";
 export default {
   components: { Footer, Header, WhoWeAre },
+   metaInfo() {
+    return {
+      title: "MuslimBuilders | Homepage",
+      meta: [
+        {
+          name: "description",
+          content:
+            "We are a community of Muslim Changemakers who upskill & pioneer the world of tech",
+        },
+        {
+          property: "og:title",
+          content:  "Homepage | MuslimBuilders",
+        },
+        { property: "og:site_name", content: "MuslimBuilders" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" },
+      ],
+    };
+  },
+
 };
 </script>
 

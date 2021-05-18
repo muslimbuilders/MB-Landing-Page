@@ -1,0 +1,32 @@
+[debug] [2021-05-16T10:15:22.453Z] ----------------------------------------------------------------------
+[debug] [2021-05-16T10:15:22.466Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell Latiude E5540\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-16T10:15:22.467Z] CLI Version:   9.10.0
+[debug] [2021-05-16T10:15:22.468Z] Platform:      win32
+[debug] [2021-05-16T10:15:22.468Z] Node Version:  v12.18.0
+[debug] [2021-05-16T10:15:22.475Z] Time:          Sun May 16 2021 11:15:22 GMT+0100 (West Africa Standard Time)
+[debug] [2021-05-16T10:15:22.476Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-16T10:15:22.526Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-05-16T10:15:22.723Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-16T10:15:22.725Z] > authorizing via signed-in user (soliualley@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Dell Latiude E5540\Desktop\Software Development\MuslimBuilder\muslimbuilder
+
+[debug] [2021-05-16T10:15:23.879Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-05-16T10:15:23.880Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
