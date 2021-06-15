@@ -22,48 +22,50 @@
 
     <!-- Who We Are -->
 
-    <section class=" container text-center">
-      <div class=" fw-bold fs-3 title">
-        Vision
-      </div>
-      <div class="content my-5">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          aliquid harum ipsum voluptatum eius, similique expedita, quidem
-          eveniet at et, incidunt dolores. Dolorum, iure commodi. Illum ea
-          sapiente velit saepe? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Praesentium aliquid harum ipsum voluptatum eius,
-          similique expedita, quidem eveniet at et, incidunt dolores. Dolorum,
-          iure commodi. Illum ea sapiente velit saepe?
-        </p>
-      </div>
-      <div class=" fw-bold fs-3 title">
-        Mission
-      </div>
-      <div class="content my-5">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          aliquid harum ipsum voluptatum eius, similique expedita, quidem
-          eveniet at et, incidunt dolores. Dolorum, iure commodi. Illum ea
-          sapiente velit saepe? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Praesentium aliquid harum ipsum voluptatum eius,
-          similique expedita, quidem eveniet at et, incidunt dolores. Dolorum,
-          iure commodi. Illum ea sapiente velit saepe?
-        </p>
-      </div>
-      <div class=" fw-bold fs-3 title">
-        Core-Values
-      </div>
-      <div class="content my-5">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          aliquid harum ipsum voluptatum eius, similique expedita, quidem
-          eveniet at et, incidunt dolores. Dolorum, iure commodi. Illum ea
-          sapiente velit saepe? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Praesentium aliquid harum ipsum voluptatum eius,
-          similique expedita, quidem eveniet at et, incidunt dolores. Dolorum,
-          iure commodi. Illum ea sapiente velit saepe?
-        </p>
+    <section class=" container ">
+      <div class="about">
+        <div class=" fw-bold fs-3 title text-center">
+          Vision
+        </div>
+        <div class="content my-5">
+          <p>
+            Lorem ipsum dolor sit ametconsectetur adipisicing elit. Praesentium
+            aliquid harum ipsum voluptatum eius, similique expedita, quidem
+            eveniet at et, incidunt dolores. Dolorum, iure commodi. Illum ea
+            sapiente velit saepe? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Praesentium aliquid harum ipsum voluptatum eius,
+            similique expedita, quidem eveniet at et, incidunt dolores. Dolorum,
+            iure commodi. Illum ea sapiente velit saepe?
+          </p>
+        </div>
+        <div class=" fw-bold fs-3 title text-center">
+          Mission
+        </div>
+        <div class="content my-5">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            aliquid harum ipsum voluptatum eius, similique expedita, quidem
+            eveniet at et, incidunt dolores. Dolorum, iure commodi. Illum ea
+            sapiente velit saepe? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Praesentium aliquid harum ipsum voluptatum eius,
+            similique expedita, quidem eveniet at et, incidunt dolores. Dolorum,
+            iure commodi. Illum ea sapiente velit saepe?
+          </p>
+        </div>
+        <div class=" fw-bold fs-3 title text-center">
+          Core-Values
+        </div>
+        <div class="content my-5">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            aliquid harum ipsum voluptatum eius, similique expedita, quidem
+            eveniet at et, incidunt dolores. Dolorum, iure commodi. Illum ea
+            sapiente velit saepe? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Praesentium aliquid harum ipsum voluptatum eius,
+            similique expedita, quidem eveniet at et, incidunt dolores. Dolorum,
+            iure commodi. Illum ea sapiente velit saepe?
+          </p>
+        </div>
       </div>
     </section>
 
@@ -89,7 +91,7 @@ export default {
         },
         {
           property: "og:title",
-          content:  "About | MuslimBuilders",
+          content: "About | MuslimBuilders",
         },
         { property: "og:site_name", content: "MuslimBuilders" },
         { property: "og:type", content: "website" },
@@ -101,11 +103,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.about {
+  width: 60%;
+  margin: 0 auto;
+}
 .hero-section {
   position: relative;
   background: url("../assets/images/aboutUs.png");
   height: 100vh;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,6 +152,14 @@ export default {
         color: #000;
       }
     }
+  }
+}
+
+// Mobile Navigation Menu
+@media screen and (max-width: 560px) {
+  .about {
+    margin: 0;
+    width: 100%;
   }
 }
 </style>

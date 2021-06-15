@@ -15,15 +15,20 @@
           </div>
         </a>
       </div>
-      <div class="links" :class="{ 'open': isOpen }">
+      <div class="links" :class="{ open: isOpen }">
         <ul>
           <li data-id="home"><router-link to="/">Home</router-link></li>
           <li data-id="about"><router-link to="/about">About</router-link></li>
           <li data-id="team"><router-link to="/team">Team</router-link></li>
-          <li data-id="projects"><router-link to="/projects">Projects</router-link></li>
+          <li data-id="contact">
+            <router-link to="/contact">Contact</router-link>
+          </li>
+          <li data-id="projects">
+            <router-link to="/projects">Projects</router-link>
+          </li>
         </ul>
       </div>
-      <div class="menu-bar" @click="navOpener" >
+      <div class="menu-bar" @click="navOpener">
         <div class="menu-wrapper">
           <i v-if="!isOpen" class="text-white  fas fa-bars"></i>
           <i v-else class="text-white  fas fa-times"></i>
@@ -31,23 +36,23 @@
       </div>
     </div>
   </div>
-</template> 
+</template>
 
 <script>
 export default {
   data() {
     return {
       pagechecker: "",
-      isOpen : false,
+      isOpen: false,
     };
   },
 
   methods: {
-    navOpener(){
-        this.isOpen = !this.isOpen;
-    }
+    navOpener() {
+      this.isOpen = !this.isOpen;
+    },
   },
- 
+
   mounted() {
     const setThis = this;
     // const menuBar = document.querySelector(".menu-bar ");
@@ -59,21 +64,17 @@ export default {
     // });
 
     const navHeader = document.querySelector(".top");
- 
+
     window.onscroll = () => {
-    document.documentElement.scrollTop > 100 ?
-        navHeader.classList.add("header-bg") :
-        navHeader.classList.remove("header-bg");
-      
+      document.documentElement.scrollTop > 100
+        ? navHeader.classList.add("header-bg")
+        : navHeader.classList.remove("header-bg");
     };
-
-
-
 
     setTimeout(() => {
       const paths = document.querySelectorAll(".links li");
 
-     paths.forEach((path) => {
+      paths.forEach((path) => {
         if (setThis.$route.path.trim() === `/${path.dataset.id}`) {
           path.classList.add("active");
         } else {
@@ -82,27 +83,23 @@ export default {
       });
     }, 500);
   },
-
- 
 };
 </script>
 
 <style lang="scss" scoped>
-
 .top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 100;
-  &.header-bg{
+  &.header-bg {
     background: rgba($color: #198754, $alpha: 0.7);
-    transition: all .6s ease-in-out;
-    
+    transition: all 0.6s ease-in-out;
   }
 }
 .header-wrapper {
-  width : 100%;
+  width: 100%;
   padding: 3px 0;
   display: flex;
   justify-content: space-between;
@@ -181,7 +178,7 @@ export default {
     width: 100vw;
     top: 0;
     left: 0;
-    right : 0;
+    right: 0;
     background: rgba($color: #198754, $alpha: 0.9);
     clip-path: circle(10px at 90% -12%);
     -webkit-clip-path: circle(10px at 90% -12%);
@@ -205,6 +202,5 @@ export default {
       }
     }
   }
-
 }
 </style>

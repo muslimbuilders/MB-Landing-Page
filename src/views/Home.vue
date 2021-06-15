@@ -15,14 +15,6 @@
                 We are a community of Muslim Changemakers who upskill & pioneer
                 the world of tech
               </h1>
-              <div class="my-5 subhero d-flex justify-content-evenly">
-                <div>
-                  <button>Get Stared</button>
-                </div>
-                <div>
-                  <button>Explore More</button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -44,6 +36,8 @@
       </div>
     </section>
 
+    
+
     <section>
       <Footer />
     </section>
@@ -56,7 +50,7 @@ import Header from "../components/Header.vue";
 import WhoWeAre from "../components/WhoWeAre.vue";
 export default {
   components: { Footer, Header, WhoWeAre },
-   metaInfo() {
+  metaInfo() {
     return {
       title: "MuslimBuilders | Homepage",
       meta: [
@@ -67,7 +61,7 @@ export default {
         },
         {
           property: "og:title",
-          content:  "Homepage | MuslimBuilders",
+          content: "Homepage | MuslimBuilders",
         },
         { property: "og:site_name", content: "MuslimBuilders" },
         { property: "og:type", content: "website" },
@@ -75,7 +69,6 @@ export default {
       ],
     };
   },
-
 };
 </script>
 
@@ -144,7 +137,7 @@ body {
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;
     // padding-left: 30px;
-    width: 70%;
+    width: 40%;
     outline: none;
     border: none;
     border-radius: 10px 0 0 10px;

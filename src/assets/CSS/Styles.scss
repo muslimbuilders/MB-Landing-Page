@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 :root {
   --Pri: rgb(87, 223, 87);
   --Ter: lightgreen;
@@ -19,7 +20,7 @@ a {
   }
 }
 body {
-  font-family: "Ubuntu", sans-serif !important;
+ font-family: 'Poppins', sans-serif; 
 }
 .title {
     position: relative;
