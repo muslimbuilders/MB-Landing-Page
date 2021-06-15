@@ -87,6 +87,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 .top {
   position: fixed;
   top: 0;
@@ -106,6 +107,7 @@ export default {
   align-items: center;
   .logo {
     z-index: 100;
+    font-family: 'Ubuntu', sans-serif;
   }
   li a {
     font-size: 20px;
